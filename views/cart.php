@@ -18,115 +18,41 @@
 
 		<!-- all css here -->
 		<!-- bootstrap v3.3.6 css -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 		<!-- animate css -->
-		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="./assets/css/animate.min.css">
 		<!-- jquery-ui.min css -->
-		<link rel="stylesheet" href="css/jquery-ui.min.css">
+		<link rel="stylesheet" href="./assets/css/jquery-ui.min.css">
 		<!-- meanmenu css -->
-		<link rel="stylesheet" href="css/meanmenu.min.css">
+		<link rel="stylesheet" href="./assets/css/meanmenu.min.css">
 		<!-- nivo-slider css -->
-		<link rel="stylesheet" href="lib/css/nivo-slider.css">
-		<link rel="stylesheet" href="lib/css/preview.css">
+		<link rel="stylesheet" href="./assets/lib/css/nivo-slider.css">
+		<link rel="stylesheet" href="./assets/lib/css/preview.css">
 		<!-- slick css -->
-		<link rel="stylesheet" href="css/slick.min.css">
+		<link rel="stylesheet" href="./assets/css/slick.min.css">
 		<!-- lightbox css -->
-		<link rel="stylesheet" href="css/lightbox.min.css">
+		<link rel="stylesheet" href="./assets/css/lightbox.min.css">
 		<!-- material-design-iconic-font css -->
-		<link rel="stylesheet" href="css/material-design-iconic-font.css">
+		<link rel="stylesheet" href="./assets/css/material-design-iconic-font.css">
 		<!-- All common css of theme -->
-		<link rel="stylesheet" href="css/default.css">
+		<link rel="stylesheet" href="./assets/css/default.css">
 		<!-- style css -->
-		<link rel="stylesheet" href="style.min.css">
+		<link rel="stylesheet" href="./assets/css/style.min.css">
         <!-- shortcode css -->
-        <link rel="stylesheet" href="css/shortcode.css">
+        <link rel="stylesheet" href="./assets/css/shortcode.css">
 		<!-- responsive css -->
-		<link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="./assets/css/responsive.css">
 		<!-- modernizr css -->
-		<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+		<script src="./assets/js/vendor/modernizr-3.11.2.min.js"></script>
 	</head>
 	<body>	
 		<!-- WRAPPER START -->
 		<div class="wrapper bg-dark-white">
 
 			<!-- HEADER-AREA START -->
-			<header id="sticky-menu" class="header header-2">
-				<div class="header-area">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-md-4 offset-md-4 col-7">
-								<div class="logo text-md-center">
-									<a href="index.html"><img src="img/logo/logo.png" alt="" /></a>
-								</div>
-							</div>
-							<div class="col-md-4 col-5">
-								<div class="mini-cart text-end">
-									<ul>
-										<li>
-											<a class="cart-icon" href="#">
-												<i class="zmdi zmdi-shopping-cart"></i>
-											
-											</a>
-											
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- MAIN-MENU START -->
-				<div class="menu-toggle menu-toggle-2 hamburger hamburger--emphatic d-none d-md-block">
-					<div class="hamburger-box">
-						<div class="hamburger-inner"></div>
-					</div>
-				</div>
-				<div class="main-menu  d-none d-md-block">
-					<nav>
-						<ul>
-							<li><a href="index.html">TRANG CHỦ</a>
-								<div class="sub-menu menu-scroll">
-									<ul>
-										<li class="menu-title">TRANG</li>
-										<li><a href="index.html">TRANG CHỦ</a></li>
-										
-									</ul>
-								</div>
-							</li>
-							<li><a href="shop.html">SẢN PHẨM</a>
-								<div class="mega-menu menu-scroll">
-									<div class="table">
-										<div class="table-cell">
-											<div class="half-width">
-												<ul>
-													<li class="menu-title">BÁN CHẠY</li>
-													
-												</ul>
-											</div>
-											<div class="half-width">
-												<ul>
-													<li class="menu-title">KHUYẾN MÃI</li>
-													
-												</ul>
-											</div>
-											<div class="full-width">
-												<div class="mega-menu-img">
-													<a href="single-product.html"><img src="img/megamenu/1.jpg" alt="" /></a>
-												</div>
-											</div>
-											<div class="pb-80"></div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li><a href="shop-sidebar.html">DANH MỤC</a></li>
-							<li><a href="blog.html">TIN TỨC</a></li>
-							<li><a href="contact.html">LIÊN HỆ</a></li>
-						</ul>
-					</nav>
-				</div>
-				<!-- MAIN-MENU END -->
-			</header>
+			<?php
+				require_once 'components/header.php';
+			?>
 			<!-- HEADER-AREA END -->
 			<!-- Mobile-menu start -->
 			<div class="mobile-menu-area">
@@ -181,13 +107,9 @@
 						<div class="col-lg-12">
 							<div class="shopping-cart">
 								<!-- Nav tabs -->
-								<ul class="cart-page-menu nav row clearfix mb-30">
-									<li><a class="active" href="cart.html">GIỎ HÀNG</a></li>
-									<li><a href="wishlist.html">YÊU THÍCH</a></li>
-									<li><a href="checkout.html">QUẢN LÝ</a></li>
-									<li><a href="order.html">ĐƠN HÀNG</a></li>
-								</ul>
-
+								<?php
+									require_once 'components/navtab.php';
+								?>
 								<!-- Tab panes -->
 								<div class="tab-content">
 									<!-- shopping-cart start -->
@@ -308,103 +230,42 @@
 			</div>
 			<!-- SHOPPING-CART-AREA END -->
 			<!-- FOOTER START -->
-			<footer>
-				<!-- Footer-area start -->
-				<div class="footer-area footer-2">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single-footer">
-                                    <h3 class="footer-title  title-border">Contact Us</h3>
-                                    <ul class="footer-contact">
-                                        <li><span>Address :</span>28 Green Tower, Street Name,<br>New York City, USA</li>
-                                        <li><span>Cell-Phone :</span>012345 - 123456789</li>
-                                        <li><span>Email :</span>your-email@gmail.com</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-6">
-                                <div class="single-footer">
-                                    <h3 class="footer-title  title-border">accounts</h3>
-                                    <ul class="footer-menu">
-                                        <li><a href="my-account.html"><i class="zmdi zmdi-dot-circle"></i>My Account</a></li>
-                                        <li><a href="wishlist.html"><i class="zmdi zmdi-dot-circle"></i>My Wishlist</a></li>
-                                        <li><a href="cart.html"><i class="zmdi zmdi-dot-circle"></i>My Cart</a></li>
-                                        <li><a href="login.html"><i class="zmdi zmdi-dot-circle"></i>Sign In</a></li>
-                                        <li><a href="checkout.html"><i class="zmdi zmdi-dot-circle"></i>Check out</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single-footer newsletter-item">
-                                    <h3 class="footer-title  title-border">Email Newsletters</h3>
-                                    <div class="footer-subscribe">
-                                        <form action="#">
-                                            <input type="text" name="email" placeholder="Email Address..." />
-                                            <button class="button-one submit-btn-4" type="submit" data-text="Subscribe">Subscribe</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-				<!-- Footer-area end -->
-				<!-- Copyright-area start -->
-				<div class="copyright-area copyright-2">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="copyright">
-									<p class="mb-0">&copy; <a href="https://themeforest.net/user/codecarnival/portfolio" target="_blank">CodeCarnival </a> 2022. All Rights Reserved.</p>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="payment  text-md-end">
-									<a href="#"><img src="img/payment/1.png" alt="" /></a>
-									<a href="#"><img src="img/payment/2.png" alt="" /></a>
-									<a href="#"><img src="img/payment/3.png" alt="" /></a>
-									<a href="#"><img src="img/payment/4.png" alt="" /></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Copyright-area start -->
-			</footer>
+			<?php
+				require_once 'components/footer.php';
+			?>
 			<!-- FOOTER END -->
 			</div>
 		<!-- WRAPPER END -->
 
 		<!-- all js here -->
-		<!-- jquery latest version -->
-		<script src="js/vendor/jquery-3.6.0.min.js"></script>
-		<script src="js/vendor/jquery-migrate-3.3.2.min.js"></script>
+	<!-- jquery latest version -->
+	<script src="./assets/js/vendor/jquery-3.6.0.min.js"></script>
+		<script src="./assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
 		<!-- bootstrap js -->
-		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="./assets/js/bootstrap.bundle.min.js"></script>
 		<!-- jquery.meanmenu js -->
-		<script src="js/jquery.meanmenu.js"></script>
+		<script src="./assets/js/jquery.meanmenu.js"></script>
 		<!-- slick.min js -->
-		<script src="js/slick.min.js"></script>
+		<script src="./assets/js/slick.min.js"></script>
 		<!-- jquery.treeview js -->
-		<script src="js/jquery.treeview.js"></script>
+		<script src="./assets/js/jquery.treeview.js"></script>
 		<!-- lightbox.min js -->
-		<script src="js/lightbox.min.js"></script>
+		<script src="./assets/js/lightbox.min.js"></script>
 		<!-- jquery-ui js -->
-		<script src="js/jquery-ui.min.js"></script>
+		<script src="./assets/js/jquery-ui.min.js"></script>
 		<!-- jquery.nivo.slider js -->
-		<script src="lib/js/jquery.nivo.slider.js"></script>
-		<script src="lib/home.js"></script>
+		<script src="./assets/lib/js/jquery.nivo.slider.js"></script>
+		<script src="./assets/lib/home.js"></script>
 		<!-- jquery.nicescroll.min js -->
-		<script src="js/jquery.nicescroll.min.js"></script>
+		<script src="./assets/js/jquery.nicescroll.min.js"></script>
 		<!-- countdon.min js -->
-		<script src="js/countdon.min.js"></script>
+		<script src="./assets/js/countdon.min.js"></script>
 		<!-- wow js -->
-		<script src="js/wow.min.js"></script>
+		<script src="./assets/js/wow.min.js"></script>
 		<!-- plugins js -->
-		<script src="js/plugins.js"></script>
+		<script src="./assets/js/plugins.js"></script>
 		<!-- main js -->
-		<script src="js/main.min.js"></script>
+		<script src="./assets/js/main.min.js"></script>
 	</body>
 
 <!-- Mirrored from template.hasthemes.com/hurst-v1/hurst/cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2024 12:04:36 GMT -->

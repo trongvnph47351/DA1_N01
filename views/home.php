@@ -18,32 +18,32 @@
 
 		<!-- all css here -->
 		<!-- bootstrap v3.3.6 css -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 		<!-- animate css -->
-		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="./assets/css/animate.min.css">
 		<!-- jquery-ui.min css -->
-		<link rel="stylesheet" href="css/jquery-ui.min.css">
+		<link rel="stylesheet" href="./assets/css/jquery-ui.min.css">
 		<!-- meanmenu css -->
-		<link rel="stylesheet" href="css/meanmenu.min.css">
+		<link rel="stylesheet" href="./assets/css/meanmenu.min.css">
 		<!-- nivo-slider css -->
-		<link rel="stylesheet" href="lib/css/nivo-slider.css">
-		<link rel="stylesheet" href="lib/css/preview.css">
+		<link rel="stylesheet" href="./assets/lib/css/nivo-slider.css">
+		<link rel="stylesheet" href="./assets/lib/css/preview.css">
 		<!-- slick css -->
-		<link rel="stylesheet" href="css/slick.min.css">
+		<link rel="stylesheet" href="./assets/css/slick.min.css">
 		<!-- lightbox css -->
-		<link rel="stylesheet" href="css/lightbox.min.css">
+		<link rel="stylesheet" href="./assets/css/lightbox.min.css">
 		<!-- material-design-iconic-font css -->
-		<link rel="stylesheet" href="css/material-design-iconic-font.css">
+		<link rel="stylesheet" href="./assets/css/material-design-iconic-font.css">
 		<!-- All common css of theme -->
-		<link rel="stylesheet" href="css/default.css">
+		<link rel="stylesheet" href="./assets/css/default.css">
 		<!-- style css -->
-		<link rel="stylesheet" href="style.min.css">
+		<link rel="stylesheet" href="./assets/css/style.min.css">
         <!-- shortcode css -->
-        <link rel="stylesheet" href="css/shortcode.css">
+        <link rel="stylesheet" href="./assets/css/shortcode.css">
 		<!-- responsive css -->
-		<link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="./assets/css/responsive.css">
 		<!-- modernizr css -->
-		<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+		<script src="./assets/js/vendor/modernizr-3.11.2.min.js"></script>
 	</head>
 	<body>	
 		<!-- WRAPPER START -->
@@ -60,7 +60,7 @@
 											<li><a class="search-open" href="#"><i class="zmdi zmdi-search"></i></a></li>
 											<li><a href="login.html"><i class="zmdi zmdi-lock"></i></a></li>
 											<li><a href="my-account.html"><i class="zmdi zmdi-account"></i></a></li>
-											<li><a href="wishlist.html"><i class="zmdi zmdi-favorite"></i></a></li>
+											<li><a href="?act=wishlist"><i class="zmdi zmdi-favorite"></i></a></li>
 										</ul>
 								</div>
 							</div>
@@ -71,83 +71,9 @@
             </div>
         </div>
 			<!-- HEADER-AREA START -->
-			<header id="sticky-menu" class="header header-2">
-				<div class="header-area">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-md-4 offset-md-4 col-7">
-								<div class="logo text-md-center">
-									<a href="index.html"><img src="img/logo/logo.png" alt="" /></a>
-								</div>
-							</div>
-							<div class="col-md-4 col-5">
-								<div class="mini-cart text-end">
-									<ul>
-										<li>
-											<a class="cart-icon" href="#">
-												<i class="zmdi zmdi-shopping-cart"></i>
-												
-											</a>
-											
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- MAIN-MENU START -->
-				<div class="menu-toggle menu-toggle-2 hamburger hamburger--emphatic d-none d-md-block">
-					<div class="hamburger-box">
-						<div class="hamburger-inner"></div>
-					</div>
-				</div>
-				<div class="main-menu  d-none d-md-block">
-					<nav>
-						<ul>
-							<li><a href="index.html">TRANG CHỦ</a>
-								<div class="sub-menu menu-scroll">
-									<ul>
-										<li class="menu-title">TRANG</li>
-										<li><a href="index.html">TRANG CHỦ</a></li>
-										
-									</ul>
-								</div>
-							</li>
-							<li><a href="shop.html">SẢN PHẨM</a>
-								<div class="mega-menu menu-scroll">
-									<div class="table">
-										<div class="table-cell">
-											<div class="half-width">
-												<ul>
-													<li class="menu-title">BÁN CHẠY</li>
-													
-												</ul>
-											</div>
-											<div class="half-width">
-												<ul>
-													<li class="menu-title">KHUYẾN MÃI</li>
-													
-												</ul>
-											</div>
-											<div class="full-width">
-												<div class="mega-menu-img">
-													<a href="single-product.html"><img src="img/megamenu/1.jpg" alt="" /></a>
-												</div>
-											</div>
-											<div class="pb-80"></div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li><a href="shop-sidebar.html">DANH MỤC</a></li>
-							<li><a href="blog.html">TIN TỨC</a></li>
-							<li><a href="contact.html">LIÊN HỆ</a></li>
-						</ul>
-					</nav>
-				</div>
-				<!-- MAIN-MENU END -->
-			</header>
+			<?php 
+				require_once 'components/header.php';
+			?>
 			<!-- HEADER-AREA END -->
 			<!-- Mobile-menu start -->
 			<div class="mobile-menu-area">
@@ -162,7 +88,7 @@
 												<li><a href="index.html">TRANG CHỦ</a></li>
 											</ul>
 										</li>
-										<li><a href="shop.html">SẢN PHẨM</a></li>
+										<li><a href="?act=shop.php">SẢN PHẨM</a></li>
 										<li><a href="shop-sidebar.html">DANH MỤC</a></li>
 										<li><a href="blog.html">TIN TỨC</a></li>
 										<li><a href="contact.html">LIÊN HỆ</a></li>
@@ -178,9 +104,9 @@
 			<section class="slider-area slider-style-2">
 				<div class="bend niceties preview-2">
 					<div id="ensign-nivoslider" class="slides">	
-						<img src="img/slider/slider-2/1.jpg" alt="" title="#slider-direction-1"  />
-						<img src="img/slider/slider-2/2.jpg" alt="" title="#slider-direction-2"  />
-						<img src="img/slider/slider-2/3.jpg" alt="" title="#slider-direction-3"  />
+						<img src="assets/img/slider/slider-2/1.jpg" alt="" title="#slider-direction-1"  />
+						<img src="assets/img/slider/slider-2/2.jpg" alt="" title="#slider-direction-2"  />
+						<img src="assets/img/slider/slider-2/3.jpg" alt="" title="#slider-direction-3"  />
 					</div>
 					<!-- direction 1 -->
 					<div id="slider-direction-1" class="t-cn slider-direction">
@@ -261,7 +187,7 @@
 						<div class="col-md-5">
 							<!-- Single-banner start -->
 							<div class="single-banner banner-1 banner-4">
-								<a class="banner-thumb" href="#"><img src="img/banner/3.jpg" alt="" /></a>
+								<a class="banner-thumb" href="?act=detailproduct"><img src="assets/img/banner/3.jpg" alt="" /></a>
 								<span class="pro-label new-label">new</span>
 								<span class="price">$50.00</span>
 								<div class="banner-brief">
@@ -275,7 +201,7 @@
 						<div class="col-md-7">
 							<!-- Single-banner start -->
 							<div class="single-banner banner-3">
-								<a class="banner-thumb" href="#"><img src="img/banner/4.jpg" alt="" /></a>
+								<a class="banner-thumb" href="?act=detailproduct"><img src="assets/img/banner/4.jpg" alt="" /></a>
 								<div class="banner-brief">
 									<h2 class="banner-title">
 										<a class="text-uppercase" href="#">design by <br />hurst <br />modern <br /><span>-2021</span></a>
@@ -302,15 +228,15 @@
 										<div class="product-img">
 											<span class="pro-label new-label">new</span>
 											<span class="pro-price-2">$ 56.20</span>
-											<a href="single-product.html"><img src="img/product/1.jpg" alt="" /></a>
+											<a href="?act=detailproduct"><img src="assets/img/product/1.jpg" alt="" /></a>
 										</div>
 										<div class="product-info clearfix text-center">
 											<div class="fix">
 												<h4 class="post-title"><a href="#">dummy Product name</a></h4>
 											</div>
 											<div class="product-action clearfix">
-												<a href="wishlist.html" data-bs-toggle="tooltip" data-placement="top" title="Wishlist"><i class="zmdi zmdi-favorite-outline"></i></a>
-												<a href="cart.html" data-bs-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
+												<a href="?act=wishlist" data-bs-toggle="tooltip" data-placement="top" title="Wishlist"><i class="zmdi zmdi-favorite-outline"></i></a>
+												<a href="?act=cart" data-bs-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
 											</div>
 										</div>
 									</div>
@@ -336,7 +262,7 @@
 											<div class="row">
 												<div class="col-lg-5 col-md-5 col-sm-6">
 													<a href="single-blog.html">
-														<img src="img/discount/5.jpg" alt="" />
+														<img src="assets/img/discount/5.jpg" alt="" />
 													</a>
 												</div>
 												<div class="col-lg-7 col-md-7 col-sm-6">
@@ -358,7 +284,7 @@
 						<div class="col-lg-4 col-md-4">
 							<div class="up-comming-product">
 								<div class="up-comming-img">
-									<a href="#"><img src="img/product/up-comming.jpg" alt="" /></a>
+									<a href="#"><img src="assets/img/product/up-comming.jpg" alt="" /></a>
 								</div>
 								<div class="up-comming-info text-center">
 									<div class="up-comming-brief">
@@ -402,26 +328,15 @@
 												<div class="product-img">
 													<span class="pro-label sale-label">sale</span>
 													<span class="pro-price-2">$ 56.20</span>
-													<a href="single-product.html"><img src="img/product/3.jpg" alt="" /></a>
+													<a href="?act=detailproduct"><img src="assets/img/product/3.jpg" alt="" /></a>
 												</div>
 												<div class="product-info clearfix text-center">
 													<div class="fix">
 														<h4 class="post-title"><a href="#">dummy Product name</a></h4>
 													</div>
-													<div class="fix">
-														<span class="pro-rating">
-															<a href="#"><i class="zmdi zmdi-star"></i></a>
-															<a href="#"><i class="zmdi zmdi-star"></i></a>
-															<a href="#"><i class="zmdi zmdi-star"></i></a>
-															<a href="#"><i class="zmdi zmdi-star-half"></i></a>
-															<a href="#"><i class="zmdi zmdi-star-half"></i></a>
-														</span>
-													</div>
 													<div class="product-action clearfix">
-														<a href="wishlist.html" data-bs-toggle="tooltip" data-placement="top" title="Wishlist"><i class="zmdi zmdi-favorite-outline"></i></a>
-														<a href="#" data-bs-toggle="modal"  data-bs-target="#productModal" title="Quick View"><i class="zmdi zmdi-zoom-in"></i></a>
-														<a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
-														<a href="cart.html" data-bs-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
+														<a href="?act=wishlist" data-bs-toggle="tooltip" data-placement="top" title="Wishlist"><i class="zmdi zmdi-favorite-outline"></i></a>
+														<a href="?act=cart" data-bs-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
 													</div>
 												</div>
 											</div>
@@ -434,26 +349,15 @@
 												<div class="product-img">
 													<span class="pro-label sale-label">sale</span>
 													<span class="pro-price-2">$ 56.20</span>
-													<a href="single-product.html"><img src="img/product/10.jpg" alt="" /></a>
+													<a href="?act=detailproduct"><img src="assets/img/product/10.jpg" alt="" /></a>
 												</div>
 												<div class="product-info clearfix text-center">
 													<div class="fix">
 														<h4 class="post-title"><a href="#">dummy Product name</a></h4>
 													</div>
-													<div class="fix">
-														<span class="pro-rating">
-															<a href="#"><i class="zmdi zmdi-star"></i></a>
-															<a href="#"><i class="zmdi zmdi-star"></i></a>
-															<a href="#"><i class="zmdi zmdi-star"></i></a>
-															<a href="#"><i class="zmdi zmdi-star-half"></i></a>
-															<a href="#"><i class="zmdi zmdi-star-half"></i></a>
-														</span>
-													</div>
 													<div class="product-action clearfix">
-														<a href="wishlist.html" data-bs-toggle="tooltip" data-placement="top" title="Wishlist"><i class="zmdi zmdi-favorite-outline"></i></a>
-														<a href="#" data-bs-toggle="modal"  data-bs-target="#productModal" title="Quick View"><i class="zmdi zmdi-zoom-in"></i></a>
-														<a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
-														<a href="cart.html" data-bs-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
+														<a href="?act=wishlist" data-bs-toggle="tooltip" data-placement="top" title="Wishlist"><i class="zmdi zmdi-favorite-outline"></i></a>
+														<a href="?act=cart" data-bs-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
 													</div>
 												</div>
 											</div>
@@ -465,26 +369,15 @@
 												<div class="product-img">
 													<span class="pro-label new-label">new</span>
 													<span class="pro-price-2">$ 56.20</span>
-													<a href="single-product.html"><img src="img/product/11.jpg" alt="" /></a>
+													<a href="?act=detailproduct"><img src="assets/img/product/11.jpg" alt="" /></a>
 												</div>
 												<div class="product-info clearfix text-center">
 													<div class="fix">
 														<h4 class="post-title"><a href="#">dummy Product name</a></h4>
 													</div>
-													<div class="fix">
-														<span class="pro-rating">
-															<a href="#"><i class="zmdi zmdi-star"></i></a>
-															<a href="#"><i class="zmdi zmdi-star"></i></a>
-															<a href="#"><i class="zmdi zmdi-star"></i></a>
-															<a href="#"><i class="zmdi zmdi-star-half"></i></a>
-															<a href="#"><i class="zmdi zmdi-star-half"></i></a>
-														</span>
-													</div>
 													<div class="product-action clearfix">
-														<a href="wishlist.html" data-bs-toggle="tooltip" data-placement="top" title="Wishlist"><i class="zmdi zmdi-favorite-outline"></i></a>
-														<a href="#" data-bs-toggle="modal"  data-bs-target="#productModal" title="Quick View"><i class="zmdi zmdi-zoom-in"></i></a>
-														<a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
-														<a href="cart.html" data-bs-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
+														<a href="?act=wishlist" data-bs-toggle="tooltip" data-placement="top" title="Wishlist"><i class="zmdi zmdi-favorite-outline"></i></a>
+														<a href="?act=cart" data-bs-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
 													</div>
 												</div>
 											</div>
@@ -515,7 +408,7 @@
 						<div class="col-lg-4 col-md-6">
 							<div class="single-blog mt-30">
 								<div class="blog-photo">
-									<a href="#"><img src="img/blog/3.jpg" alt="" /></a>
+									<a href="#"><img src="assets/img/blog/3.jpg" alt="" /></a>
 									<div class="like-share text-center fix">
 										<a href="#"><i class="zmdi zmdi-favorite"></i><span>89 Like</span></a>
 										<a href="#"><i class="zmdi zmdi-comments"></i><span>59 Comments</span></a>
@@ -527,7 +420,7 @@
 										<div class="post-date floatleft"><span class="text-dark-red">30</span></div>
 										<div class="post-year floatleft">
 											<p class="text-uppercase text-dark-red mb-0">June, 2021</p>
-											<h4 class="post-title"><a href="#" tabindex="0">Farniture drawing 2021</a></h4>
+											<h4 class="post-title"><a href="?act=detailnew" tabindex="0">Farniture drawing 2021</a></h4>
 										</div>
 									</div>
 									<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered If you are going to use a passage  Lorem Ipsum, you alteration in some form.</p>
@@ -540,7 +433,7 @@
 						<div class="col-lg-4 col-md-6">
 							<div class="single-blog mt-30">
 								<div class="blog-photo">
-									<a href="#"><img src="img/blog/4.jpg" alt="" /></a>
+									<a href="#"><img src="assets/img/blog/4.jpg" alt="" /></a>
 									<div class="like-share text-center fix">
 										<a href="#"><i class="zmdi zmdi-favorite"></i><span>89 Like</span></a>
 										<a href="#"><i class="zmdi zmdi-comments"></i><span>59 Comments</span></a>
@@ -552,7 +445,7 @@
 										<div class="post-date floatleft"><span class="text-dark-red">30</span></div>
 										<div class="post-year floatleft">
 											<p class="text-uppercase text-dark-red mb-0">June, 2021</p>
-											<h4 class="post-title"><a href="#" tabindex="0">Farniture drawing 2021</a></h4>
+											<h4 class="post-title"><a href="?act=detailnew" tabindex="0">Farniture drawing 2021</a></h4>
 										</div>
 									</div>
 									<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered If you are going to use a passage  Lorem Ipsum, you alteration in some form.</p>
@@ -565,7 +458,7 @@
 						<div class="col-lg-4 col-md-6">
 							<div class="single-blog mt-30">
 								<div class="blog-photo">
-									<a href="#"><img src="img/blog/5.jpg" alt="" /></a>
+									<a href="#"><img src="assets/img/blog/5.jpg" alt="" /></a>
 									<div class="like-share text-center fix">
 										<a href="#"><i class="zmdi zmdi-favorite"></i><span>89 Like</span></a>
 										<a href="#"><i class="zmdi zmdi-comments"></i><span>59 Comments</span></a>
@@ -577,7 +470,7 @@
 										<div class="post-date floatleft"><span class="text-dark-red">30</span></div>
 										<div class="post-year floatleft">
 											<p class="text-uppercase text-dark-red mb-0">June, 2021</p>
-											<h4 class="post-title"><a href="#" tabindex="0">Farniture drawing 2021</a></h4>
+											<h4 class="post-title"><a href="?act=detailnew" tabindex="0">Farniture drawing 2021</a></h4>
 										</div>
 									</div>
 									<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered If you are going to use a passage  Lorem Ipsum, you alteration in some form.</p>
@@ -598,19 +491,19 @@
 							<div class="brand">
 								<div class="brand-slider">
 									<div class="single-brand">
-										<a href="https://themeforest.net/user/bootexperts/portfolio" target="_blank"><img src="img/brand/1.png" alt="" /></a>
+										<a href="https://themeforest.net/user/bootexperts/portfolio" target="_blank"><img src="assets/img/brand/1.png" alt="" /></a>
 									</div>
 									<div class="single-brand">
-										<a href="https://themeforest.net/user/codecarnival/portfolio" target="_blank"><img src="img/brand/2.png" alt="" /></a>
+										<a href="https://themeforest.net/user/codecarnival/portfolio" target="_blank"><img src="assets/img/brand/2.png" alt="" /></a>
 									</div>
 									<div class="single-brand">
-										<a href="https://themeforest.net/user/devitems/portfolio" target="_blank"><img src="img/brand/3.png" alt="" /></a>
+										<a href="https://themeforest.net/user/devitems/portfolio" target="_blank"><img src="assets/img/brand/3.png" alt="" /></a>
 									</div>
 									<div class="single-brand">
-										<a href="https://themeforest.net/user/hastech/portfolio" target="_blank"><img src="img/brand/4.png" alt="" /></a>
+										<a href="https://themeforest.net/user/hastech/portfolio" target="_blank"><img src="assets/img/brand/4.png" alt="" /></a>
 									</div>
 									<div class="single-brand">
-										<a href="https://psdrightsell.com/" target="_blank"><img src="img/brand/5.png" alt="" /></a>
+										<a href="https://psdrightsell.com/" target="_blank"><img src="assets/img/brand/5.png" alt="" /></a>
 									</div>
 								</div>
 							</div>
@@ -620,163 +513,42 @@
 			</div>
 			<!-- BRAND-LOGO-AREA END -->
 			<!-- FOOTER START -->
-			<footer>
-				<!-- Footer-area start -->
-				<div class="footer-area footer-2">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-4 col-md-6">
-								<div class="single-footer">
-									<h3 class="footer-title  title-border">Contact Us</h3>
-									<ul class="footer-contact">
-										<li><span>Address :</span>28 Green Tower, Street Name,<br>New York City, USA</li>
-										<li><span>Cell-Phone :</span>012345 - 123456789</li>
-										<li><span>Email :</span>your-email@gmail.com</li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-lg-2 col-md-3 col-sm-6">
-								<div class="single-footer">
-									<h3 class="footer-title  title-border">accounts</h3>
-									<ul class="footer-menu">
-										<li><a href="#"><i class="zmdi zmdi-dot-circle"></i>My Account</a></li>
-										<li><a href="#"><i class="zmdi zmdi-dot-circle"></i>My Wishlist</a></li>
-										<li><a href="#"><i class="zmdi zmdi-dot-circle"></i>My Cart</a></li>
-										<li><a href="#"><i class="zmdi zmdi-dot-circle"></i>Sign In</a></li>
-										<li><a href="#"><i class="zmdi zmdi-dot-circle"></i>Check out</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-6">
-								<div class="single-footer newsletter-item">
-									<h3 class="footer-title  title-border">Email Newsletters</h3>
-									<div class="footer-subscribe">
-										<form action="#">
-											<input type="text" name="email" placeholder="Email Address..." />
-											<button class="button-one submit-btn-4" type="submit" data-text="Subscribe">Subscribe</button>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Footer-area end -->
-				<!-- Copyright-area start -->
-				<div class="copyright-area copyright-2">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="copyright">
-									<p class="mb-0">&copy; <a href="https://themeforest.net/user/codecarnival/portfolio" target="_blank">CodeCarnival </a> 2022. All Rights Reserved.</p>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="payment  text-md-end">
-									<a href="#"><img src="img/payment/1.png" alt="" /></a>
-									<a href="#"><img src="img/payment/2.png" alt="" /></a>
-									<a href="#"><img src="img/payment/3.png" alt="" /></a>
-									<a href="#"><img src="img/payment/4.png" alt="" /></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Copyright-area start -->
-			</footer>
+			<?php
+				require_once 'components/footer.php';
+			?>
 			<!-- FOOTER END -->
-			<!-- QUICKVIEW PRODUCT -->
-			<div id="quickview-wrapper">
-			   <!-- Modal -->
-			   <div class="modal fade" id="productModal" tabindex="-1" role="dialog">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							</div>
-							<div class="modal-body">
-								<div class="modal-product">
-									<div class="product-images">
-										<div class="main-image images">
-											<img alt="#" src="img/product/quickview-photo.jpg"/>
-										</div>
-									</div><!-- .product-images -->
-
-									<div class="product-info">
-										<h1>Aenean eu tristique</h1>
-										<div class="price-box-3">
-											<hr />
-											<div class="s-price-box">
-												<span class="new-price">$160.00</span>
-												<span class="old-price">$190.00</span>
-											</div>
-											<hr />
-										</div>
-										<a href="shop.html" class="see-all">See all features</a>
-										<div class="quick-add-to-cart">
-											<form method="post" class="cart">
-												<div class="numbers-row">
-													<input type="number" id="french-hens" value="3" min="1">
-												</div>
-												<button class="single_add_to_cart_button" type="submit">Add to cart</button>
-											</form>
-										</div>
-										<div class="quick-desc">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero.
-										</div>
-										<div class="social-sharing">
-											<div class="widget widget_socialsharing_widget">
-												<h3 class="widget-title-modal">Share this product</h3>
-												<ul class="social-icons">
-													<li><a target="_blank" title="Google +" href="#" class="gplus social-icon"><i class="zmdi zmdi-google-plus"></i></a></li>
-													<li><a target="_blank" title="Twitter" href="#" class="twitter social-icon"><i class="zmdi zmdi-twitter"></i></a></li>
-													<li><a target="_blank" title="Facebook" href="#" class="facebook social-icon"><i class="zmdi zmdi-facebook"></i></a></li>
-													<li><a target="_blank" title="LinkedIn" href="#" class="linkedin social-icon"><i class="zmdi zmdi-linkedin"></i></a></li>
-												</ul>
-											</div>
-										</div>
-									</div><!-- .product-info -->
-								</div><!-- .modal-product -->
-							</div><!-- .modal-body -->
-						</div><!-- .modal-content -->
-					</div><!-- .modal-dialog -->
-			   </div>
-			   <!-- END Modal -->
 			</div>
-			<!-- END QUICKVIEW PRODUCT -->	
-			
-		</div>
 		<!-- WRAPPER END -->
 
 		<!-- all js here -->
 		<!-- jquery latest version -->
-		<script src="js/vendor/jquery-3.6.0.min.js"></script>
-		<script src="js/vendor/jquery-migrate-3.3.2.min.js"></script>
+		<script src="./assets/js/vendor/jquery-3.6.0.min.js"></script>
+		<script src="./assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
 		<!-- bootstrap js -->
-		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="./assets/js/bootstrap.bundle.min.js"></script>
 		<!-- jquery.meanmenu js -->
-		<script src="js/jquery.meanmenu.js"></script>
+		<script src="./assets/js/jquery.meanmenu.js"></script>
 		<!-- slick.min js -->
-		<script src="js/slick.min.js"></script>
+		<script src="./assets/js/slick.min.js"></script>
 		<!-- jquery.treeview js -->
-		<script src="js/jquery.treeview.js"></script>
+		<script src="./assets/js/jquery.treeview.js"></script>
 		<!-- lightbox.min js -->
-		<script src="js/lightbox.min.js"></script>
+		<script src="./assets/js/lightbox.min.js"></script>
 		<!-- jquery-ui js -->
-		<script src="js/jquery-ui.min.js"></script>
+		<script src="./assets/js/jquery-ui.min.js"></script>
 		<!-- jquery.nivo.slider js -->
-		<script src="lib/js/jquery.nivo.slider.js"></script>
-		<script src="lib/home.js"></script>
+		<script src="./assets/lib/js/jquery.nivo.slider.js"></script>
+		<script src="./assets/lib/home.js"></script>
 		<!-- jquery.nicescroll.min js -->
-		<script src="js/jquery.nicescroll.min.js"></script>
+		<script src="./assets/js/jquery.nicescroll.min.js"></script>
 		<!-- countdon.min js -->
-		<script src="js/countdon.min.js"></script>
+		<script src="./assets/js/countdon.min.js"></script>
 		<!-- wow js -->
-		<script src="js/wow.min.js"></script>
+		<script src="./assets/js/wow.min.js"></script>
 		<!-- plugins js -->
-		<script src="js/plugins.js"></script>
+		<script src="./assets/js/plugins.js"></script>
 		<!-- main js -->
-		<script src="js/main.min.js"></script>
+		<script src="./assets/js/main.min.js"></script>
 	</body>
 
 <!-- Mirrored from template.hasthemes.com/hurst-v1/hurst/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2024 12:04:44 GMT -->
