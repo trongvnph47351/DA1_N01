@@ -28,7 +28,7 @@
     <section id="sidebar">
         <a href="#" class="brand">
             <i class='bx bxs-alarm-add	'></i>
-            <span class="text">UniQue</span>
+            <span class="text">ADMIN_NHÓM01</span>
         </a>
         <ul class="side-menu top">
             <li class="">

@@ -78,7 +78,7 @@
                                                 <h5 class="mb-0">Total <span class="floatright">$500.00</span></h5>
                                             </div>
                                             <div class="cart-bottom  clearfix">
-                                                <a href="cart.html" class="button-one floatleft text-uppercase"
+                                                <a href="?act=giohang" class="button-one floatleft text-uppercase"
                                                     data-text="View cart">View cart</a>
                                                 <a href="checkout.html" class="button-one floatright text-uppercase"
                                                     data-text="Check out">Check out</a>
@@ -361,7 +361,8 @@
                                     </form>
                                 </div>
                             </li>
-                            <li><a href="my-account.html" title="My-Account"><i class="zmdi zmdi-account"></i></a></li>
+                            <li><a href="?act=dangky" title="My-Account"><i class="zmdi zmdi-account"></i></a>
+                            </li>
                             <li><a href="wishlist.html" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a></li>
                         </ul>
                     </div>
@@ -399,176 +400,39 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-title text-center">
-                            <h2 class="title-border">San pham</h2>
+                            <h2 class="title-border">GIÀY THỂ THAO SNEAKER</h2>
                         </div>
                         <div class="product-slider style-1 arrow-left-right">
                             <!-- Single-product start -->
                             <div class="single-product">
                                 <div class="product-img">
-                                    <span class="pro-label new-label">new</span>
-                                    <a href="single-product.html"><img src="img/product/1.jpg" alt="" /></a>
+                                    <span class="pro-label new-label">New</span>
+                                    <a href="single-product.html"><img src="/view/img/1.jpg" alt="" /></a>
                                     <div class="product-action clearfix">
-                                        <a href="wishlist.html" data-bs-toggle="tooltip" data-placement="top"
-                                            title="Wishlist"><i class="zmdi zmdi-favorite-outline"></i></a>
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#productModal"
-                                            title="Quick View"><i class="zmdi zmdi-zoom-in"></i></a>
-                                        <a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i
-                                                class="zmdi zmdi-refresh"></i></a>
-                                        <a href="cart.html" data-bs-toggle="tooltip" data-placement="top"
-                                            title="Add To Cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
+
+                                        <input type="submit" name="addtocart" value="Add to cart" class="buttonbtn">
                                     </div>
                                 </div>
                                 <div class="product-info clearfix">
                                     <div class="fix">
-                                        <h4 class="post-title floatleft"><a href="#">dummy Product name</a></h4>
+                                        <h4 class="post-title floatleft"><a href="#">Giay thể thao</a></h4>
                                         <p class="floatright hidden-sm d-none d-md-block">Furniture</p>
                                     </div>
                                     <div class="fix">
-                                        <span class="pro-price floatleft">$ 56.20</span>
-                                        <span class="pro-rating floatright">
-                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                        </span>
+                                        <span class="pro-price floatleft">2000</span>
+
                                     </div>
                                 </div>
                             </div>
                             <!-- Single-product end -->
                             <!-- Single-product start -->
-                            <div class="single-product">
-                                <div class="product-img">
-                                    <span class="pro-label sale-label">Sale</span>
-                                    <a href="single-product.html"><img src="img/product/2.jpg" alt="" /></a>
-                                    <div class="product-action clearfix">
-                                        <a href="wishlist.html" data-bs-toggle="tooltip" data-placement="top"
-                                            title="Wishlist"><i class="zmdi zmdi-favorite-outline"></i></a>
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#productModal"
-                                            title="Quick View"><i class="zmdi zmdi-zoom-in"></i></a>
-                                        <a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i
-                                                class="zmdi zmdi-refresh"></i></a>
-                                        <a href="cart.html" data-bs-toggle="tooltip" data-placement="top"
-                                            title="Add To Cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                                    </div>
-                                </div>
-                                <div class="product-info clearfix">
-                                    <div class="fix">
-                                        <h4 class="post-title floatleft"><a href="#">dummy Product name</a></h4>
-                                        <p class="floatright hidden-sm d-none d-md-block">Furniture</p>
-                                    </div>
-                                    <div class="fix">
-                                        <span class="pro-price floatleft">$ 56.20</span>
-                                        <span class="pro-rating floatright">
-                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
+
                             <!-- Single-product end -->
                             <!-- Single-product start -->
-                            <div class="single-product">
-                                <div class="product-img">
-                                    <a href="single-product.html"><img src="img/product/3.jpg" alt="" /></a>
-                                    <div class="product-action clearfix">
-                                        <a href="wishlist.html" data-bs-toggle="tooltip" data-placement="top"
-                                            title="Wishlist"><i class="zmdi zmdi-favorite-outline"></i></a>
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#productModal"
-                                            title="Quick View"><i class="zmdi zmdi-zoom-in"></i></a>
-                                        <a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i
-                                                class="zmdi zmdi-refresh"></i></a>
-                                        <a href="cart.html" data-bs-toggle="tooltip" data-placement="top"
-                                            title="Add To Cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                                    </div>
-                                </div>
-                                <div class="product-info clearfix">
-                                    <div class="fix">
-                                        <h4 class="post-title floatleft"><a href="#">dummy Product name</a></h4>
-                                        <p class="floatright hidden-sm d-none d-md-block">Furniture</p>
-                                    </div>
-                                    <div class="fix">
-                                        <span class="pro-price floatleft">$ 56.20</span>
-                                        <span class="pro-rating floatright">
-                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
+
                             <!-- Single-product end -->
                             <!-- Single-product start -->
-                            <div class="single-product">
-                                <div class="product-img">
-                                    <a href="single-product.html"><img src="img/product/4.jpg" alt="" /></a>
-                                    <div class="product-action clearfix">
-                                        <a href="wishlist.html" data-bs-toggle="tooltip" data-placement="top"
-                                            title="Wishlist"><i class="zmdi zmdi-favorite-outline"></i></a>
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#productModal"
-                                            title="Quick View"><i class="zmdi zmdi-zoom-in"></i></a>
-                                        <a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i
-                                                class="zmdi zmdi-refresh"></i></a>
-                                        <a href="cart.html" data-bs-toggle="tooltip" data-placement="top"
-                                            title="Add To Cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                                    </div>
-                                </div>
-                                <div class="product-info clearfix">
-                                    <div class="fix">
-                                        <h4 class="post-title floatleft"><a href="#">dummy Product name</a></h4>
-                                        <p class="floatright hidden-sm d-none d-md-block">Furniture</p>
-                                    </div>
-                                    <div class="fix">
-                                        <span class="pro-price floatleft">$ 56.20</span>
-                                        <span class="pro-rating floatright">
-                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single-product end -->
-                            <!-- Single-product start -->
-                            <div class="single-product">
-                                <div class="product-img">
-                                    <span class="pro-label new-label">new</span>
-                                    <a href="single-product.html"><img src="img/product/3.jpg" alt="" /></a>
-                                    <div class="product-action clearfix">
-                                        <a href="wishlist.html" data-bs-toggle="tooltip" data-placement="top"
-                                            title="Wishlist"><i class="zmdi zmdi-favorite-outline"></i></a>
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#productModal"
-                                            title="Quick View"><i class="zmdi zmdi-zoom-in"></i></a>
-                                        <a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i
-                                                class="zmdi zmdi-refresh"></i></a>
-                                        <a href="cart.html" data-bs-toggle="tooltip" data-placement="top"
-                                            title="Add To Cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                                    </div>
-                                </div>
-                                <div class="product-info clearfix">
-                                    <div class="fix">
-                                        <h4 class="post-title floatleft"><a href="#">dummy Product name</a></h4>
-                                        <p class="floatright hidden-sm d-none d-md-block">Furniture</p>
-                                    </div>
-                                    <div class="fix">
-                                        <span class="pro-price floatleft">$ 56.20</span>
-                                        <span class="pro-rating floatright">
-                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
+
                             <!-- Single-product end -->
                         </div>
                     </div>
@@ -676,7 +540,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-title text-center">
-                            <h2 class="title-border">Purchase Online on Hurst</h2>
+                            <h2 class="title-border">DANH MỤC SẢN PHẨM</h2>
                         </div>
                     </div>
                 </div>
