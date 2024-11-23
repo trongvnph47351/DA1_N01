@@ -1,7 +1,10 @@
 <?php
-    require_once 'commons/function.php';
-    require_once 'controllers/homeController.php';
-    require_once 'models/homeModel.php';
+    require_once __DIR__ . '/env.php';
+    require_once __DIR__ . '/./commons/function.php';
+
+    require_once __DIR__ . '/./models/homeModel.php';
+    require_once __DIR__ . '/./controllers/clients/homeController.php';
+    
 
     $act = $_GET['act']??'/';
     match ($act){
@@ -15,6 +18,7 @@
         'cart' => (new homeController())->cart(),
         'checkout' => (new homeController())->checkout(),
         'order' => (new homeController())->order(),
-        'wishlist' => (new homeController())->wishlist()
+        'wishlist' => (new homeController())->wishlist(),
+        'myaccount' => (new homeController())->myaccount()
     }
 ?>

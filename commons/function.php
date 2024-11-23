@@ -1,14 +1,20 @@
 <?php
     function connectDB(){
-        $host="mysql:host=localhost;dbname=duan01_nhom01;charset=utf8";
-        $user="root";
-        $pass="";
-        try {
-            $conn = new PDO($host, $user, $pass);
+       $host = DB_HOST;
+       $port = DB_PORT;
+       $name = DB_NAME;
+
+       try {
+            $conn = new PDO(
+                "mysql:host=$host;port=$port;dbname=$name",
+                DB_USERNAME,
+                DB_PASSWORD
+            );
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
             return $conn;
-        } catch (PDOException $e){
-            echo $e->getMessage();
-        }
+       } catch (PDOException $e) {
+            echo 'connect failded' . $e->getMessage();
+       }
     }
 ?>
