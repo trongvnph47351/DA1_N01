@@ -2,7 +2,7 @@
     require_once 'commons/function.php';
     require_once 'controllers/homeController.php';
     require_once 'models/homeModel.php';
-    cccc
+
 
     $act = $_GET['act']??'/';
     match ($act){
