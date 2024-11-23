@@ -25,7 +25,7 @@
               <td><?= $ct['id'] ?></td>
               <td><?= $ct['ten_danh_muc'] ?></td>
               <td><a href="?act=updateloaihang&i"><button class="btn btn-warning">Sửa</button></a></td>
-              <td><a onclick="return confirm('Bạn có muốn xóa không ?')" href="?act=deleteloaihang&i"><button class="btn btn-danger">Xóa</button></a></td>
+              <td><a onclick="return confirm('Bạn có muốn xóa không ?')" href="?act=deletecategory ?>"><button class="btn btn-danger">Xóa</button></a></td>
             </tr>
 
             <?php }

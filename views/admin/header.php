@@ -25,8 +25,8 @@
       <div class="container-fluid">
         <ul class="nav navbar-nav">
           <li><a href="?act=/">Trang Chủ</a></li>
-          <li><a href="?act=category">Loại Hàng</a></li>
-          <li><a href="?act=products">Hàng Hóa</a></li>
+          <li><a href="?act=category">Danh Mục</a></li>
+          <li><a href="?act=products">Sản Phẩm</a></li>
           <li><a href="?act=listkhachhang">Khách Hàng</a></li>
           <li><a href="?act=thongke">Thống Kê</a></li>
           <li><a href="/X-Shop-DuAnMau/index.php">Đăng Xuất</a></li>

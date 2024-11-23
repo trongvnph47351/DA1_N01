@@ -17,7 +17,8 @@
         'category' => (new categoryController)->listCategory(),
         'products' => (new productController)->listProduct(),
         'insertproduct' => (new productController)->insert(),
-        'insertcategory' => (new categoryController)->insert()
+        'insertcategory' => (new categoryController)->insert(),
+       
     }
 ?>
   

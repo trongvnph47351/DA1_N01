@@ -5,10 +5,13 @@
             $this->conn = connectDB();
         }
         public function list(){
-            $sql = " SELECT *from danh_muc";
-            $stmt = $this->conn->prepare($sql);
-            $stmt -> execute();
-            return $stmt->fetchAll();
+            $sql = "select * from danh_muc";
+            return $this->conn->query($sql);
         }
+        // public function delete($id){
+        //     $sql = "delete from danh_muc where id = $id";
+        //     $stmt = $this->conn->prepare($sql);
+        //     return $stmt->execute();
+        // }
     }
 ?>
