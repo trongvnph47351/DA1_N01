@@ -19,6 +19,7 @@
         'checkout' => (new homeController())->checkout(),
         'order' => (new homeController())->order(),
         'wishlist' => (new homeController())->wishlist(),
-        'myaccount' => (new homeController())->myaccount()
+        'myaccount' => (new homeController())->myaccount(),
+        'login' =>(new homeController())->login(),
     }
 ?>

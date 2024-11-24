@@ -44,5 +44,24 @@
         function myaccount(){
             require_once 'views/clients/my-account.php';
         }
+        public function formlogin()  {
+            require_once 'views/clients/login.php';
+            
+        }
+
+        public function login()  {
+            if($_SERVER['REQUEST_METHOD']=='POST'&& isset($_POST)){
+                $name=$_POST['name'];
+                
+                $email=$_POST['email'];
+                $pass=$_POST['pass'];
+                $newpass=$_POST['newpass'];
+            if(isset($_POST['newpss'])&& $_POST['newpass']==$_POST['pass']){
+                header('Location:'.__DIR__> '?ctl=/');
+                
+            }
+            }
+            require_once 'views/clients/login.php';
+        }
     }
 ?>
