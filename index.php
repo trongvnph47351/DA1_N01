@@ -5,7 +5,7 @@
     require_once __DIR__ . '/./models/homeModel.php';
     require_once __DIR__ . '/./controllers/clients/homeController.php';
     
-4444444
+
     $act = $_GET['act']??'/';
     match ($act){
         '/' => (new homeController())->home(),
@@ -19,6 +19,7 @@
         'checkout' => (new homeController())->checkout(),
         'order' => (new homeController())->order(),
         'wishlist' => (new homeController())->wishlist(),
-        'myaccount' => (new homeController())->myaccount()
+        'myaccount' => (new homeController())->myaccount(),
+        'login' => (new homeController()) ->login(),
     }
 ?>
