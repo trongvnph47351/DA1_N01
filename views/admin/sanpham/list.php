@@ -19,15 +19,20 @@
                 </tr>
             </thead>
             <tbody>
+                <?php
+                    foreach($allProduct as $key => $pr){
+                ?>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td> VND</td>
-                    <td></td>
-                    <td></td>
+                    <td><?= $pr['id'] ?></td>
+                    <td><?= $pr['ten_san_pham'] ?></td>
+                    <td><?= $pr['gia'] ?>VND</td>
+                    <td><img src="/./upload/<?= $pr['img'] ?>" alt="" width="70px"></td>
+                    <td><?= $pr['ten_danh_muc'] ?></td>
                     <td><button class="btn btn-warning">Sửa</button></a></td>
-                    <td><a onclick="return confirm('Bạn có muốn xóa không ?')" href=""><button class="btn btn-danger">Xóa</button></a></td>
+                    <td><a onclick="return confirm('Bạn có muốn xóa không ?')" href="?act=deleteproduct&id=<?= $pr['id'] ?>"><button class="btn btn-danger">Xóa</button></a></td>
                 </tr>
+                <?php }
+                ?>
             </tbody>
         </table>
         <button type="button" class="btn btn-success"><a href="?act=insertproduct">Nhập thêm</a></button>
