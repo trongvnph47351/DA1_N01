@@ -1,4 +1,5 @@
 <?php
+session_start();
     require_once __DIR__ . '/env.php';
     require_once __DIR__ . '/./commons/function.php';
 
@@ -20,6 +21,6 @@
         'order' => (new homeController())->order(),
         'wishlist' => (new homeController())->wishlist(),
         'myaccount' => (new homeController())->myaccount(),
-        'login' =>(new homeController())->login(),
+        'dangky' =>(new homeController())->dangky(),
     }
 ?>

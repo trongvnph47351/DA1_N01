@@ -44,21 +44,32 @@
         function myaccount(){
             require_once 'views/clients/my-account.php';
         }
-        public function formlogin()  {
+             public function formlogin()  {
             require_once 'views/clients/login.php';
             
         }
 
-        public function login()  {
+        public function dangky()  {
             if($_SERVER['REQUEST_METHOD']=='POST'&& isset($_POST)){
-                $name=$_POST['name'];
-                
+                $ten_dang_nhap=$_POST['ten_dang_nhap'];
+                $so_dien_thoai=$_POST['so_dien_thoai'];
+                $dia_chi=$_POST['dia_chi'];
                 $email=$_POST['email'];
-                $pass=$_POST['pass'];
+                $mat_khau=$_POST['pass'];
+                $ho_ten=$_POST['ho_ten'];
                 $newpass=$_POST['newpass'];
-            if(isset($_POST['newpss'])&& $_POST['newpass']==$_POST['pass']){
-                header('Location:'.__DIR__> '?ctl=/');
                 
+                $tai_khoan= $this->homeModel->dangky($ten_dang_nhap,$mat_khau,$so_dien_thoai,$email, $dia_chi,$ho_ten);
+            if(!empty($newpass)&& !empty($mat_khau)&& $newpass === $mat_khau){
+               
+            //    echo"<script> alert('ĐĂNG KÝ THÀNH CÔNG'); </script>";
+            
+                header('Location:'.__DIR__. '?act=login');
+               
+             
+                
+            }else{
+                echo"<script> alert('Đăng ký không thành công'); </script>";
             }
             }
             require_once 'views/clients/login.php';

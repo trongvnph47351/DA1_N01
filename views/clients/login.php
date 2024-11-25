@@ -25,6 +25,7 @@
 </head>
 
 <body>
+
     <!-- WRAPPER START -->
     <div class="wrapper bg-dark-white">
 
@@ -34,6 +35,7 @@
 			?>
         <!-- HEADER-AREA END -->
         <!-- Mobile-menu start -->
+
         <div class="mobile-menu-area">
             <div class="container-fluid">
                 <div class="row">
@@ -81,48 +83,50 @@
         <!-- HEADING-BANNER END -->
         <!-- SHOPPING-CART-AREA START -->
         <div class="login-area  pt-80 pb-80">
-            <div class="container">
-                <form action="#">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="customer-login text-left form-control">
-                                <h4 class="title-1 title-border text-uppercase mb-30">KHÁCH HÀNG ĐÃ ĐĂNG KÝ</h4>
-                                <p class="text-gray">Nếu bạn có tài khoản của chúng tôi, vui lòng đăng nhập!</p>
-                                <input type="text" placeholder="Email..." name="email">
-                                <input type="password" placeholder="Mật khẩu">
-                                <p><a href="#" class="text-gray">Quên mật khẩu?</a></p>
-                                <button type="submit" data-text="login" class="button-one submit-button mt-15">Đăng
-                                    nhập</button>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="customer-login text-left form-control	">
-                                <h4 class="title-1 title-border text-uppercase mb-30">KHÁCH HÀNG MỚI</h4>
-                                <p class="text-gray">Nếu bạn chưa có tài khoản, vui lòng đăng ký!</p>
-                                <input type="text" placeholder="Tên đăng nhập..." name="name">
-                                <input type="text" placeholder="Email..." name="email">
-                                <input type="text" placeholder="Địa chỉ..." name="dia_chi">
-                                <input type="text" placeholder="Số điện thoại..." name="so_dien_thoai">
-                                <input type="password" placeholder="Mật khẩu...">
-                                <input type="password" placeholder="Nhập lại mật khẩu...">
-                                <p class="mb-0">
-                                    <input type="checkbox" id="newsletter" name="newsletter" checked>
-                                    <label for="newsletter"><span>Đăng ký nhận bản tin của chúng tôi!</span></label>
-                                </p>
-                                <button type="submit" data-text="regiter" class="button-one submit-button mt-15">Đăng
-                                    ký</button>
-                            </div>
-                        </div>
+            <div class="row">
+                <!-- Biểu mẫu đăng nhập -->
+                <form action="?act=dangnhap" method="post" class="col-lg-6">
+                    <div class="customer-login text-left form-control">
+                        <h4 class="title-1 title-border text-uppercase mb-30">KHÁCH HÀNG ĐÃ ĐĂNG KÝ</h4>
+                        <p class="text-gray">Nếu bạn có tài khoản của chúng tôi, vui lòng đăng nhập!</p>
+                        <input type="text" placeholder="Email..." name="email" required>
+                        <input type="password" placeholder="Mật khẩu..." name="mat_khau" required>
+                        <p><a href="#" class="text-gray">Quên mật khẩu?</a></p>
+                        <button type="submit" data-text="login" class="button-one submit-button mt-15">Đăng
+                            nhập</button>
+                    </div>
+                </form>
+
+                <!-- Biểu mẫu đăng ký -->
+                <form action="?act=dangky" method="post" class="col-lg-6">
+                    <div class="customer-login text-left form-control">
+                        <h4 class="title-1 title-border text-uppercase mb-30">KHÁCH HÀNG MỚI</h4>
+                        <p class="text-gray">Nếu bạn chưa có tài khoản, vui lòng đăng ký!</p>
+                        <input type="text" placeholder="Tên đăng nhập..." name="ten_dang_nhap" required>
+                        <input type="text" placeholder="Họ và tên..." name="ho_ten" required>
+                        <input type="text" placeholder="Email..." name="email" required>
+                        <input type="text" placeholder="Địa chỉ..." name="dia_chi" required>
+                        <input type="text" placeholder="Số điện thoại..." name="so_dien_thoai" required>
+                        <input type="password" placeholder="Mật khẩu..." name="pass" required>
+                        <input type="password" placeholder="Nhập lại mật khẩu..." name="newpass" required>
+                        <p class="mb-0">
+                            <input type="checkbox" id="newsletter" name="newsletter" checked>
+                            <label for="newsletter"><span>Đăng ký nhận bản tin của chúng tôi!</span></label>
+                        </p>
+                        <button type="submit" data-text="register" class="button-one submit-button mt-15">Đăng
+                            ký</button>
                     </div>
                 </form>
             </div>
+
         </div>
-        <!-- SHOPPING-CART-AREA END -->
-        <!-- FOOTER START -->
-        <?php
+    </div>
+    <!-- SHOPPING-CART-AREA END -->
+    <!-- FOOTER START -->
+    <?php
 				require_once 'components/footer.php';
 			?>
-        <!-- FOOTER END -->
+    <!-- FOOTER END -->
     </div>
     <!-- WRAPPER END -->
 
